@@ -58,13 +58,13 @@ class _HomePageState extends State<HomePage> {
                   Card(
                     elevation: 2.0,
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Text(data[index]['first_name']),
-                        FadeInImage.memoryNetwork(
-                          
+                        FadeInImage.assetNetwork(
+                          placeholder: 'images/progress-image.gif',
                           image: data[index]['avatar'],
-                          fit: BoxFit.cover,
+                          fit: BoxFit.fitWidth,
                         )
                       ],
                     ),
